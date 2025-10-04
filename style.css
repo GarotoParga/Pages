@@ -138,4 +138,7 @@ footer a {
         align-items: center;
         flex-direction: column;
     }
+    .navBarMobile{
+        display: none;
+    }
 }
