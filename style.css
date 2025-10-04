@@ -48,6 +48,38 @@ header img {
     height: 100px;
 }
 
+.navBarMobile{
+    position: fixed;
+    top: 0%;
+    transform: translateY(-3%);
+    height: 100vh;
+    width: 100vw;
+    background: #151515;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.navBarMobile, nav ul li, a{
+    margin: 20px 0px;
+    color: white;
+}
+
+.navBarMobile ul li > a, select{
+    padding: 20px;
+}
+.buttonX{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    top: 5%;
+    right: 10%;
+    background: none;
+    outline: none;
+    padding: 5px x;
+    border-radius: 10px;
+}
 main {
     height: 70vh;
     margin: auto;
@@ -99,5 +131,11 @@ footer a {
 @media screen and (max-width: 400px) {
     header nav {
         display: none;
+    }
+    nav, .ulNavBarMobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
