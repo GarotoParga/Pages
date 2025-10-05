@@ -12,6 +12,10 @@
 <body>
     <header>
         <h1>Garoto Parga</h1>
+        <div class="iconesMenu">
+            <img src="imgs/menuBurguer.png" class="menu" id="menuBurguer" alt="Menu" onclick="abrirMenu()">
+            <img src="imgs/fechar.png" class="menu" id="fecharMenu" alt="Fechar Meenu">
+        </div>
         <nav>
             <ul>
                 <li><a href="#" class="links">Sobre mim</a></li>
@@ -19,7 +23,7 @@
                 <li><a href="#" class="links">Desenho foda</a></li>
                 <li><a href="#" class="links">Jogo foda</a></li>
             </ul>
-            <select name="idioma" id="idioma">
+            <select name="idioma" id="idioma" aria-placeholder="Seleção de idioma">
                 <option value="Português" selected>Português</option>
                 <option value="Inglês">English</option>
                 <option value="Espanhol">Español</option>
@@ -32,35 +36,11 @@
         </nav>
         <img src="./imgs/moon.png" alt="Logo do site">
     </header>
-    <div class="menu">
-        
-    </div>
-    <div class="navBarMobile">
-        <button type="button" class="buttonX"><div class="iconeX">X</div></button>
-        <nav>
-            <ul class="ulNavBarMobile">
-                <li><a href="#" class="links">Sobre mim</a></li>
-                <li><a href="#" class="links">Músicas</a></li>
-                <li><a href="#" class="links">Desenho foda</a></li>
-                <li><a href="#" class="links">Jogo foda</a></li>
-            </ul>
-            <select name="idioma" id="idioma">
-                <option value="Português" selected>Português</option>
-                <option value="Inglês">English</option>
-                <option value="Espanhol">Español</option>
-                <option value="Francês">Français</option>
-                <option value="Alemão">Deutsch</option>
-                <option value="Italiano">Italiano</option>
-                <option value="Japonês">日本語</option>
-                <option value="Chinês">中文</option>
-            </select>
-        </nav>  
-    </div>
     <main>
         <div class="mainDiv">
             <h1>Bem-vindo a minha Página de Projetos</h1>
             <p>Explore meus projetos e trabalhos aqui!</p>
-           <a href="../Projetos/src/index.html"><button>Projetos</button></a>
+            <a href="../Projetos/src/index.html"><button>Projetos</button></a>
         </div>
     </main>
     <footer>

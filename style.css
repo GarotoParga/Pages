@@ -25,8 +25,8 @@ header {
     align-items: center;
     color: white;
     box-shadow: 0px 0px 5px black;
-    overflow-x: hidden ;
-    
+    overflow-x: hidden;
+
 }
 
 header nav,
@@ -36,7 +36,8 @@ ul {
     align-items: center;
 }
 
-li, select {
+li,
+select {
     margin: 0px 10px;
 }
 
@@ -44,42 +45,18 @@ header nav ul li a {
     color: white;
 }
 
+.menu {
+    display: none;
+    z-index: 1;
+    height: 50px;
+    margin: 0px 0px 0px 10px;
+}
+
 header img {
     height: 100px;
 }
 
-.navBarMobile{
-    position: fixed;
-    top: 0%;
-    transform: translateY(-3%);
-    height: 100vh;
-    width: 100vw;
-    background: #151515;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-.navBarMobile, nav ul li, a{
-    margin: 20px 0px;
-    color: white;
-}
 
-.navBarMobile ul li > a, select{
-    padding: 20px;
-}
-.buttonX{
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5em;
-    top: 5%;
-    right: 10%;
-    background: none;
-    outline: none;
-    padding: 5px x;
-    border-radius: 10px;
-}
 main {
     height: 70vh;
     margin: auto;
@@ -91,11 +68,13 @@ main {
     text-align: center;
 }
 
-.mainDiv h1, p, button{
+.mainDiv h1,
+p,
+button {
     margin: 10px 0px;
 }
 
-button{
+button {
     background-color: #151515;
     color: white;
     padding: 20px;
@@ -106,12 +85,15 @@ button{
     transition: all .2s ease-in-out;
     border: none;
 }
-button a{
+
+button a {
     color: white;
 }
-button:hover{
+
+button:hover {
     transform: scale(1.1);
 }
+
 footer {
     background-color: #151515;
     height: 15vh;
@@ -128,17 +110,44 @@ footer a {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 400px) {
-    header nav {
+@media screen and (max-width: 600px) {
+    header{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header img{
         display: none;
     }
-    nav, .ulNavBarMobile{
+    #menuBurguer {
+        display: block;
+    }
+
+    header nav {
+        display: none; /* none para flex */
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: fixed;
+        background-color: #151515;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header nav ul{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .navBarMobile{
-        display: none;
+    header nav ul li, input{
+        margin: 15px 0px;
+        font-size: 1.2em;
     }
+
+
 }
