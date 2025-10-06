@@ -12,30 +12,31 @@
 <body>
     <header>
         <h1>Garoto Parga</h1>
-        <div class="menuBurguer">
+        <div class="menuBurguer" id="menuBtn">
             <div id="linha1" class="menu"></div>
             <div id="linha2" class="menu"></div>
             <div id="linha3" class="menu"></div>
         </div>
-        <nav>
+        <nav id="navMenu">
             <ul>
                 <li><a href="#" class="links">Sobre mim</a></li>
-                <li><a href="#" class="links">Músicas</a></li>
-                <li><a href="#" class="links">Desenho foda</a></li>
-                <li><a href="#" class="links">Jogo foda</a></li>
+                <li><a href="#" class="links" id="musica">Músicas</a></li>
+                <li><a href="https://finalspace.co.uk/en-US/seasons" class="links" target="_blank">Desenho foda</a></li>
+                <li><a href="https://store.steampowered.com/app/105600/Terraria/" class="links" target="_blank">Jogo
+                        foda</a></li>
             </ul>
-            <select name="idioma" id="idioma" aria-placeholder="Seleção de idioma">
-                <option value="Português" selected>Português</option>
-                <option value="Inglês">English</option>
-                <option value="Espanhol">Español</option>
-                <option value="Francês">Français</option>
-                <option value="Alemão">Deutsch</option>
-                <option value="Italiano">Italiano</option>
-                <option value="Japonês">日本語</option>
-                <option value="Chinês">中文</option>
+            <select name="idioma" id="idioma" aria-label="Seleção de idioma">
+                <option value="pt" selected>Português</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+                <option value="jp">日本語</option>
+                <option value="cn">中文</option>
             </select>
         </nav>
-        <img src="./imgs/moon.png" alt="Logo do site">
+        <img src="./imgs/moon.png" alt="Logo do site" id="imgLua">
     </header>
     <main>
         <div class="mainDiv">
@@ -48,6 +49,8 @@
         <p>Davi Correa Parga.</p>
         <p><a href="https://www.instagram.com/_parguinha_/" target="_blank">instagram</a></p>
     </footer>
+
+    <script src="script .js"></script>
 </body>
 
 </html>
