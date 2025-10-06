@@ -56,6 +56,43 @@ header img {
     height: 100px;
 }
 
+header nav select {
+    width: 100px;
+    outline: none;
+}
+
+header nav ul li:hover {
+    text-decoration: underline;
+}
+
+.menuBurguer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.menuBurguer .menu {
+    display: block;
+    height: 5px;
+    width: 50px;
+    margin: 5px;
+    background-color: white;
+}
+
+.menuBurguer.ativo #linha1 {
+    align-self: center;
+    transform: rotate(45deg) translate(11px, 11px);
+}
+
+.menuBurguer.ativo #linha2 {
+    opacity: 0;
+}
+
+.menuBurguer.ativo #linha3 {
+    transform: rotate(-45deg) translate(10px, -10px);
+}
 
 main {
     height: 70vh;
@@ -74,7 +111,7 @@ button {
     margin: 10px 0px;
 }
 
-button {
+.buttonProjetos {
     background-color: #151515;
     color: white;
     padding: 20px;
@@ -86,11 +123,11 @@ button {
     border: none;
 }
 
-button a {
+.buttonProjetos a {
     color: white;
 }
 
-button:hover {
+.buttonProjetos:hover {
     transform: scale(1.1);
 }
 
@@ -111,22 +148,19 @@ footer a {
 }
 
 @media screen and (max-width: 600px) {
-    header{
+    header {
         position: relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    header img{
+
+    header img {
         display: none;
-    }
-    #menuBurguer {
-        display: block;
     }
 
     header nav {
-        display: none; /* none para flex */
-        z-index: 2;
+        display: none;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -138,16 +172,25 @@ footer a {
         align-items: center;
         flex-direction: column;
     }
-    header nav ul{
+
+    header nav ul {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    header nav ul li, input{
-        margin: 15px 0px;
+
+    header nav ul li,
+    a {
+        padding: 10px;
+        margin: 10px 0px;
         font-size: 1.2em;
     }
 
+    header nav select {
+        width: 120px;
+        margin: 20px 0px;
+        font-size: 1.1em;
+    }
 
 }
